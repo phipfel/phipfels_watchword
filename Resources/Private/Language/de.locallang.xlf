@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-02-09T19:21:24Z" product-name="phipfels_watchword">
+		<header/>
+		<body>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword">
+				<source>Watchword Of The Day</source>
+				<target>Losung des Tages</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.headline">
+				<source>Watchword Of The Day</source>
+				<target>Losung des Tages</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.date">
+				<source>Date</source>
+				<target>Datum</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.public_holiday">
+				<source>Public Holiday</source>
+				<target>Feiertag</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.watchword">
+				<source>Watchword</source>
+				<target>Losungstext</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.watchword_passage">
+				<source>Watchword Passage</source>
+				<target>Losungstext Textstelle</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.instructive_text">
+				<source>Instructive Text</source>
+				<target>Lehrtext</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.instructive_text_passage">
+				<source>Instructive Text Passage</source>
+				<target>Lehrtext Textstelle</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.watchword_page_type">
+				<source>Watchword Folder</source>
+				<target>Losungs Ordner</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.additional_information">
+				<source>Click here for more information.</source>
+				<target>Weitere Informationen finden Sie hier.</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day1">
+				<source>Monday</source>
+				<target>Montag</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day2">
+				<source>Tuesday</source>
+				<target>Dienstag</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day3">
+				<source>Wednesday</source>
+				<target>Mittwoch</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day4">
+				<source>Thursday</source>
+				<target>Donnerstag</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day5">
+				<source>Friday</source>
+				<target>Freitag</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day6">
+				<source>Saturday</source>
+				<target>Samstag</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day7">
+				<source>Sunday</source>
+				<target>Sonntag</target>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.nothing_to_show"> 
+			    <source>There are currently no entries to show. Please check if automaticly download is enabled. (constant default value is 0)</source> 
+			    <target>Es sind keine Losungen vorhanden. Bitte prüfen Sie ob die automatischen Downloads aktiviert sind. (Standardwert der Konstante ist 0)</target> 
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

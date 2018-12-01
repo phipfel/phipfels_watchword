@@ -1,0 +1,23 @@
+
+plugin.tx_phipfelswatchword {
+	view {
+		# cat=plugin.tx_phipfelswatchword/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:phipfels_watchword/Resources/Private/Templates/
+		# cat=plugin.tx_phipfelswatchword/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:phipfels_watchword/Resources/Private/Partials/
+		# cat=plugin.tx_phipfelswatchword/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:phipfels_watchword/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_phipfelswatchword//a; type=string; label=Default storage PID
+		storagePid =
+	}
+	features {
+		# cat=plugin.tx_phipfelswatchword//a; type=boolean; label=Enable automatic download if no entry is found for current year
+		autoDownload = 0
+		# cat=plugin.tx_phipfelswatchword//a; type=boolean; label=Show the public holidays in frontend
+		enablePublicHoliays = 0
+		# cat=plugin.tx_phipfelswatchword//a; type=string; label=Defines the datetimeformat of current date
+		dateFormatFluid = d.m.Y
+	}
+}

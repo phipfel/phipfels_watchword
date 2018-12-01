@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-04-04T11:49:38Z" product-name="phipfels_watchword">
+		<header/>
+		<body>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword">
+				<source>Watchword</source>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.public_holiday">
+				<source>Public Holiday</source>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.watchword">
+				<source>Watchword</source>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.watchword_passage">
+				<source>Watchword Passage</source>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.instructive_text">
+				<source>Instructive Text</source>
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.instructive_text_passage">
+				<source>Instructive Text Passage</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

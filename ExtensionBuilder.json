@@ -1,0 +1,156 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    209,
+                    203
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": [
+
+                    ]
+                },
+                "name": "Watchword",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "766606043354"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "date",
+                            "propertyType": "NativeDate",
+                            "uid": "848662783672"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "publicHoliday",
+                            "propertyType": "String",
+                            "uid": "1059116172331"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "watchword",
+                            "propertyType": "String",
+                            "uid": "1162087184573"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "watchwordPassage",
+                            "propertyType": "String",
+                            "uid": "538956486513"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "instructiveText",
+                            "propertyType": "String",
+                            "uid": "814099567789"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "instructiveTextPassage",
+                            "propertyType": "String",
+                            "uid": "88620537066"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+
+                    ]
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [
+
+        ],
+        "description": "Contains the current watchword from the Herrnhuter Br\u00fcdergemeine \/ Losungen",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "6.2",
+            "version": ""
+        },
+        "extensionKey": "phipfels_watchword",
+        "name": "Herrnhuter Losung",
+        "originalExtensionKey": "",
+        "persons": [
+            {
+                "company": "",
+                "email": "ph.schumann@gmx.de",
+                "name": "Philipp Schumann",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "watchword",
+                "name": "Display Herrnhuter Losung"
+            }
+        ],
+        "vendorName": "TYPO3"
+    },
+    "wires": [
+
+    ],
+    "log": {
+        "last_modified": "2015-04-04 11:49",
+        "extension_builder_version": "6.2.0",
+        "be_user": " (1)"
+    }
+}
