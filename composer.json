@@ -1,0 +1,30 @@
+{
+  "name": "phipfels_watchword",
+  "description": "Contains the current watchword from the Herrnhuter Brüdergemeine / Losungen",
+  "type": "typo3-cms-extension",
+  "version": "2.0.0",
+  "keywords": ["TYPO3 CMS", "Losung", "Losungen", "Herrnhuter", "Watchword"],
+  "homepage": "https://github.com/phipfel/phipfels_watchword",
+  "authors": [
+    {
+      "name": "Philipp Schumann",
+      "role": "Developer",
+      "homepage": "https://auxiliaweb.de"
+    }
+  ],
+  "license": "GPL-2.0-or-later",
+  "support": {
+    "issues": "https://github.com/phipfel/phipfels_watchword/issues"
+  },
+  "require": {
+    "typo3/cms-core": "^8.0",
+    "ext-zip": "*",
+    "ext-simplexml": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Phipfel\\PhipfelsWatchword\\": "Classes/"
+    }
+  }
+}

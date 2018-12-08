@@ -38,6 +38,6 @@ CREATE TABLE tx_phipfelswatchword_domain_model_watchword (
 	PRIMARY KEY (uid),
 	KEY parent (pid),
 	KEY t3ver_oid (t3ver_oid,t3ver_wsid),
- KEY language (l10n_parent,sys_language_uid)
+  KEY language (l10n_parent,sys_language_uid)
 
 );

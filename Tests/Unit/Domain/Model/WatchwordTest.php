@@ -1,6 +1,6 @@
 <?php
 
-namespace TYPO3\PhipfelsWatchword\Tests\Unit\Domain\Model;
+namespace Phipfel\PhipfelsWatchword\Tests\Unit\Domain\Model;
 
 /***************************************************************
  *  Copyright notice
@@ -27,7 +27,7 @@ namespace TYPO3\PhipfelsWatchword\Tests\Unit\Domain\Model;
  ***************************************************************/
 
 /**
- * Test case for class \TYPO3\PhipfelsWatchword\Domain\Model\Watchword.
+ * Test case for class \Phipfel\PhipfelsWatchword\Domain\Model\Watchword.
  *
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
@@ -36,12 +36,12 @@ namespace TYPO3\PhipfelsWatchword\Tests\Unit\Domain\Model;
  */
 class WatchwordTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 	/**
-	 * @var \TYPO3\PhipfelsWatchword\Domain\Model\Watchword
+	 * @var \Phipfel\PhipfelsWatchword\Domain\Model\Watchword
 	 */
 	protected $subject = NULL;
 
 	protected function setUp() {
-		$this->subject = new \TYPO3\PhipfelsWatchword\Domain\Model\Watchword();
+		$this->subject = new \Phipfel\PhipfelsWatchword\Domain\Model\Watchword();
 	}
 
 	protected function tearDown() {

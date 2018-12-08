@@ -1,5 +1,5 @@
 <?php
-namespace TYPO3\PhipfelsWatchword\Tests\Unit\Controller;
+namespace Phipfel\PhipfelsWatchword\Tests\Unit\Controller;
 /***************************************************************
  *  Copyright notice
  *
@@ -25,19 +25,19 @@ namespace TYPO3\PhipfelsWatchword\Tests\Unit\Controller;
  ***************************************************************/
 
 /**
- * Test case for class TYPO3\PhipfelsWatchword\Controller\WatchwordController.
+ * Test case for class Phipfel\PhipfelsWatchword\Controller\WatchwordController.
  *
  * @author Philipp Schumann <ph.schumann@gmx.de>
  */
 class WatchwordControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 
 	/**
-	 * @var \TYPO3\PhipfelsWatchword\Controller\WatchwordController
+	 * @var \Phipfel\PhipfelsWatchword\Controller\WatchwordController
 	 */
 	protected $subject = NULL;
 
 	protected function setUp() {
-		$this->subject = $this->getMock('TYPO3\\PhipfelsWatchword\\Controller\\WatchwordController', array('redirect', 'forward', 'addFlashMessage'), array(), '', FALSE);
+		$this->subject = $this->getMock('Phipfel\\PhipfelsWatchword\\Controller\\WatchwordController', array('redirect', 'forward', 'addFlashMessage'), array(), '', FALSE);
 	}
 
 	protected function tearDown() {
@@ -51,7 +51,7 @@ class WatchwordControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 
 		$allWatchwordes = $this->getMock('TYPO3\\CMS\\Extbase\\Persistence\\ObjectStorage', array(), array(), '', FALSE);
 
-		$watchwordRepository = $this->getMock('TYPO3\\PhipfelsWatchword\\Domain\\Repository\\WatchwordRepository', array('findAll'), array(), '', FALSE);
+		$watchwordRepository = $this->getMock('Phipfel\\PhipfelsWatchword\\Domain\\Repository\\WatchwordRepository', array('findAll'), array(), '', FALSE);
 		$watchwordRepository->expects($this->once())->method('findAll')->will($this->returnValue($allWatchwordes));
 		$this->inject($this->subject, 'watchwordRepository', $watchwordRepository);
 

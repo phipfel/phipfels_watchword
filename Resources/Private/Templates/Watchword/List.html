@@ -1,34 +1,23 @@
-
-<f:layout name="Default" />
-
-This Template is responsible for creating a table of domain objects.
-
-If you modify this template, do not forget to change the overwrite settings
-in /Configuration/ExtensionBuilder/settings.yaml:
-  Resources:
-    Private:
-      Templates:
-        List.html: keep
-
-Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+<f:layout name="Default"/>
 
 <f:section name="main">
 
-<f:flashMessages />
+    <f:flashMessages/>
 
-<f:if condition="{watchwords}">
-    <f:else>
-        <f:translate key="tx_phipfelswatchword_domain_model_watchword.nothing_to_show" />
-    </f:else>
-</f:if>
-<f:for each="{watchwords}" as="watchword">
-    <f:if condition="{watchword.serverDate -> f:format.date()} == {watchword.date -> f:format.date()}">
+    <f:if condition="{storagePidNotSet}">
         <f:then>
-            <div class="tx_phipfelswatchword" >
+            <f:translate
+                    key="tx_phipfelswatchword_domain_model_watchword.storagePidNotSet"/>
+        </f:then>
+    </f:if>
+    <f:if condition="{watchword}">
+        <f:then>
+            <div class="tx_phipfelswatchword">
                 <div class="watchwordWrapper">
                     <div class="dateWrapper">
                         <span class="dateName">
-                            <f:translate key="tx_phipfelswatchword_domain_model_watchword.day<f:format.date format='N' date='{watchword.date}' />" />,
+                            <f:translate
+                                    key="tx_phipfelswatchword_domain_model_watchword.day<f:format.date format='N' date='{watchword.date}'/>"/>,
                         </span>
                         <span class="date">
                             {watchword.date -> f:format.date(format:'{dateFormatFluid}')}
@@ -44,7 +33,8 @@ Otherwise your changes will be overwritten the next time you save the extension 
                         </f:then>
                     </f:if>
                     <span class="watchword">
-                        <span class="watchwordTitle">Losungstext:</span>
+                        <span class="watchwordTitle"><f:translate
+                                key="tx_phipfelswatchword_domain_model_watchword.watchword"/>:</span>
                         <strong>{watchword.watchword}</strong>
                         <span class="watchwordPassage">{watchword.watchwordPassage}</span>
                     </span>
@@ -56,12 +46,14 @@ Otherwise your changes will be overwritten the next time you save the extension 
                 </div>
             </div>
         </f:then>
+        <f:else>
+            <f:translate key="tx_phipfelswatchword_domain_model_watchword.nothing_to_show"/>
+        </f:else>
     </f:if>
-</f:for>
     <div class="license">
         <a href="http://www.herrnhuter.de" target="_blank">&copy Evangelische Br&uuml;der-Unit&auml;t – Herrnhuter Br&uuml;dergemeine</a>
         <a href="http://www.losungen.de" target="_blank">
-            <f:translate key="tx_phipfelswatchword_domain_model_watchword.additional_information" />
+            <f:translate key="tx_phipfelswatchword_domain_model_watchword.additional_information"/>
         </a>
     </div>
 

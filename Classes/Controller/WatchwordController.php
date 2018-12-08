@@ -1,5 +1,6 @@
 <?php
-namespace TYPO3\PhipfelsWatchword\Controller;
+
+namespace Phipfel\PhipfelsWatchword\Controller;
 
 
 /***************************************************************
@@ -32,34 +33,38 @@ namespace TYPO3\PhipfelsWatchword\Controller;
  */
 class WatchwordController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
 
-	/**
-	 * watchwordRepository
-	 *
-	 * @var \TYPO3\PhipfelsWatchword\Domain\Repository\WatchwordRepository
-	 * @inject
-	 */
-	protected $watchwordRepository = NULL;
+    /**
+     * watchwordService
+     *
+     * @var \Phipfel\PhipfelsWatchword\Service\WatchwordService
+     * @inject
+     */
+    protected $watchwordService;
 
-	/**
-	 * action list
-	 *
-	 * @return void
-	 */
-	public function listAction() {
-		$extbaseFrameworkConfiguration = $this->configurationManager->getConfiguration(\TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface::CONFIGURATION_TYPE_FRAMEWORK);
-		$storagePid = $extbaseFrameworkConfiguration['persistence']['storagePid'];
-		$enablePublicHoliays = $extbaseFrameworkConfiguration['features']['enablePublicHoliays'];
-		$autoDownload = $extbaseFrameworkConfiguration['features']['autoDownload'];
-		$dateFormatFluid = $extbaseFrameworkConfiguration['features']['dateFormatFluid'];
+    /**
+     * @var \Phipfel\PhipfelsWatchword\Utility\WatchwordSettings
+     * @inject
+     */
+    protected $watchwordSettings;
 
-		if(!$this->watchwordRepository->upToDate($storagePid) && $autoDownload)
-			$this->watchwordRepository->downloadWatchword($storagePid);
+    /**
+     * action list
+     *
+     * @return void
+     */
+    public function listAction() {
+        $storagePidNotSet = true;
+        if ($this->watchwordSettings->getStoragePid() !== '') {
+            $storagePidNotSet = false;
+            if (!$this->watchwordService->isUpToDate() && $this->watchwordSettings->isAutoDownloadEnabled()) {
+                $this->watchwordService->downloadWatchword();
+            }
+        }
 
-		$watchwords = $this->watchwordRepository->findAll();
-		$this->view->assign('watchwords', $watchwords);
-
-		$this->view->assign('enablePublicHolidays', $enablePublicHoliays);
-		$this->view->assign('dateFormatFluid', $dateFormatFluid);
-	}
-
+        // Set View-Variables
+        $this->view->assign('storagePidNotSet', $storagePidNotSet);
+        $this->view->assign('watchword', $this->watchwordService->getCurrentWatchword());
+        $this->view->assign('enablePublicHolidays', $this->watchwordSettings->arePublicHolidaysEnabled());
+        $this->view->assign('dateFormatFluid', $this->watchwordSettings->getDateFormat());
+    }
 }

@@ -1,5 +1,6 @@
 <?php
-namespace TYPO3\PhipfelsWatchword\Domain\Model;
+
+namespace Phipfel\PhipfelsWatchword\Domain\Model;
 
 
 /***************************************************************

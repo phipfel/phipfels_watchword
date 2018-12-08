@@ -36,26 +36,29 @@
 			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day1">
 				<source>Monday</source>
 			</trans-unit>
-			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day1">
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day2">
 				<source>Tuesday</source>
 			</trans-unit>
-			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day1">
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day3">
 				<source>Wednesday</source>
 			</trans-unit>
-			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day1">
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day4">
 				<source>Thursday</source>
 			</trans-unit>
-			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day1">
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day5">
 				<source>Friday</source>
 			</trans-unit>
-			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day1">
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day6">
 				<source>Saturday</source>
 			</trans-unit>
-			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day1">
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.day7">
 				<source>Sunday</source>
 			</trans-unit>
 			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.nothing_to_show"> 
-			    <source>There are currently no entries to show. Please check if automaticly download is enabled.</source> 
+			    <source>There are currently no entries to show. Please check if the automaticly download is enabled. (constant default value is 0).</source> 
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.storage_pid_not_set"> 
+			    <source>The storagePid is not set. Please set a PID for your watchwords.</source> 
 			</trans-unit>
 		</body>
 	</file>

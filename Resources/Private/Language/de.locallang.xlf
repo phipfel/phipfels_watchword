@@ -72,8 +72,12 @@
 				<target>Sonntag</target>
 			</trans-unit>
 			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.nothing_to_show"> 
-			    <source>There are currently no entries to show. Please check if automaticly download is enabled. (constant default value is 0)</source> 
-			    <target>Es sind keine Losungen vorhanden. Bitte prüfen Sie ob die automatischen Downloads aktiviert sind. (Standardwert der Konstante ist 0)</target> 
+			    <source>There are currently no entries to show. Please check if the automaticly download is enabled. (constant default value is 0)</source> 
+			    <target>Es sind keine Losungen vorhanden. Bitte prüfen Sie, ob der automatische Downloads aktiviert ist. (Standardwert der Konstante ist 0)</target> 
+			</trans-unit>
+			<trans-unit id="tx_phipfelswatchword_domain_model_watchword.storage_pid_not_set"> 
+			    <source>The storagePid is not set. Please set a Pid for your watchwords.</source> 
+			    <target>Die storagePid ist nicht gesetzt. Bitte setzen Sie die Pid um die Losungen gezielt zu speichern.</target> 
 			</trans-unit>
 		</body>
 	</file>
