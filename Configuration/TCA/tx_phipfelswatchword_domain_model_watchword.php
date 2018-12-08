@@ -26,7 +26,7 @@ $GLOBALS['TCA']['tx_phipfelswatchword_domain_model_watchword'] = array(
 		),
 		'searchFields' => 'date,public_holiday,watchword,watchword_passage,instructive_text,instructive_text_passage,',
 		'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('phipfels_watchword') . 'Configuration/TCA/Watchword.php',
-		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('phipfels_watchword') . 'Resources/Public/Icons/tx_phipfelswatchword_domain_model_watchword.gif'
+		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('phipfels_watchword') . 'Resources/Public/Icons/tx_phipfelswatchword_domain_model_watchword.gif'
 	),
 	'interface' => array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, date, public_holiday, watchword, watchword_passage, instructive_text, instructive_text_passage',
